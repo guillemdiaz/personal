@@ -202,7 +202,7 @@ body {
 
 .about-description::first-letter {
     color: black;
-    background-color: #ccd6f6;
+    background-color: whitesmoke;
     border-radius: 2px;
     box-shadow: 3px 3px 0 #46f9ad;
     font-size: 250%;
