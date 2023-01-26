@@ -12,7 +12,7 @@ repository is public
 Just go to https://guillemdiaz.github.io/personal-website/
 
 ## Information architecture
-It is a one page website. I based my desing on Brittany Chiang's website:
+It is a one page website. I based my design on Brittany Chiang's website:
 https://brittanychiang.com/#about
 
 ## Target audience
