@@ -1,11 +1,11 @@
 # guillemdiaz.github.io
 
 This website is done entirely with html, css and a little of js. It took me 20 hours (just coding) 
-to build it.
+to build it.<br>
 The web page is quite complete but my intention is to add another project section (when I have
 more of them) and to update the skills and the experience section when I acquire more. I also want
 to add a color picker to change the main color of the web and some graphics with Three.js to 
-to give more dynamism.
+to give more dynamism.<br>
 I have not included my resume because it seemed to me that it wasnt't going to add anything
 else to what is already on the web, apart from the fact that it has personal information and this 
 repository is public.
