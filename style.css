@@ -479,10 +479,10 @@ body {
     top: -30px;
     font-size: 12px;
     font-style: italic;
-    color: black;
+    color: whitesmoke;
     padding: 3px 5px;
     border-radius: 3px;
-    background: #46f9ad;
+    background: black;
     z-index: 1;
 }
 
@@ -493,7 +493,7 @@ body {
     height: 10px;
     width: 10px;
     z-index: -1;
-    background-color: #46f9ad;
+    background-color: black;
     transform: translateX(75%) rotate(45deg);
 }
 
