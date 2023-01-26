@@ -15,7 +15,3 @@ It is a one page website.
 
 ## Target audience
 This website is for people who want to know more about me, my education, my work experience and my skills
-
-## Visual design
-I've based my design on this website 
-by Brittany Chiang: https://brittanychiang.com/#about 
