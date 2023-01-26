@@ -1,0 +1,578 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Heuristica";
+    background-color: #282c35;
+    color: whitesmoke;
+}
+
+/* #46F9AD;*/
+
+* {
+    scroll-behavior: smooth;
+    scroll-margin-top: 80px;
+}
+
+/***************************** SOCIAL MEDIA LINKS *****************************/
+
+#social-links {
+    position: fixed;
+    bottom: 5px;
+}
+
+#social-links ul {
+    list-style-type: none;
+}
+
+#social-links ul li {
+    margin: 0 0 15px 0;
+}
+
+#social-links img {
+    filter: brightness(105%);
+}
+
+#social-links img:hover {
+    transform: scale(1.1);
+}
+
+.twitter {
+    margin-left: -2.5px;
+}
+
+/*********************************** EMAIL ************************************/
+
+#email {
+    position: fixed;
+    left: auto;
+    bottom: 150px;
+    right: -150px;
+    transform: rotate(90deg);
+}
+
+.email {
+    font-size: 16px;
+    text-decoration: none;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.email:hover {
+    color: #46f9ad;
+}
+
+/******************************* FLEX CONTAINER *******************************/
+
+#container {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+/*********************************** HEADER ***********************************/
+
+#header {
+    padding: 30px 50px 10px 40px;
+    font-size: 16px;
+    /*box-shadow: 0px 15px 10px -15px black;*/
+    margin-bottom: 25px;
+}
+
+#header a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#header a span {
+    color: #46f9ad;
+}
+
+#header a.logo {
+    position: fixed;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#header a:hover {
+    color: #46f9ad;
+}
+
+#header a.active {
+    color: #46f9ad;
+    border: 1.5px solid #46f9ad;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.header-right {
+    float: right;
+}
+
+/*********************************** INTRO ************************************/
+
+#intro {
+    margin-left: 250px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 75px;
+}
+
+.intro-intro {
+    color: #46f9ad;
+    letter-spacing: 2px;
+}
+
+.intro-name {
+    margin-top: 10px;
+    color: whitesmoke;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.intro-info {
+    color: whitesmoke;
+    opacity: 50%;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+/*********************************** ABOUT ************************************/
+
+#about {
+    margin-top: 240px;
+    margin-right: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 250px;
+    gap: 20px;
+}
+
+.about-start {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.about-start span {
+    color: #46f9ad;
+    font-size: 20px;
+}
+
+.about-start span:last-child {
+    font-size: 16px;
+    color: #ccd6f6;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.about-description {
+    margin-right: 110px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 150%;
+}
+
+.about-description a {
+    text-decoration: none;
+    color: whitesmoke;
+    background-image: linear-gradient(120deg, #46f9ad 0%, #46f9ad 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+}
+
+.about-description a:hover {
+    color: black;
+    background-size: 100% 88%;
+}
+
+.about-description::first-letter {
+    color: black;
+    background-color: #ccd6f6;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 #46f9ad;
+    font-size: 250%;
+    padding: 6px 3px;
+    margin-right: 15px;
+    float: left;
+}
+
+#about img {
+    position: relative;
+    z-index: 1;
+    border-radius: 7.5px;
+    filter: grayscale(100%);
+    /*filter: sepia(100%) hue-rotate(100deg) saturate(225%);*/
+}
+
+#about img:hover {
+    filter: none;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.about-image {
+    display: inline-block;
+    position: relative;
+}
+
+.about-image::before {
+    position: absolute;
+    top: 10.5%;
+    left: 7.5%;
+    width: 100%;
+    height: 95%;
+    border: 2.25px solid #46f9ad;
+    border-radius: 7.5px;
+    content: "";
+}
+
+.about-image:hover::before {
+    top: 8%;
+    left: 4%;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+/********************************* EXPERIENCE *********************************/
+
+#experience {
+    margin-top: 240px;
+    margin-left: 350px;
+    gap: 20px;
+}
+
+#experience h5 {
+    display: inline-block;
+    position: relative;
+}
+
+#experience h5:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #46f9ad;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+#experience h5:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#experience h5:first-of-type {
+    margin-top: 50px;
+}
+
+.education:not(.education p) {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.education {
+    margin-left: 225px;
+    margin-top: -25px;
+}
+
+.education div {
+    letter-spacing: 1px;
+}
+
+.education p {
+    color: #ccd6f6;
+}
+
+.experience-title {
+    font-size: 32px;
+}
+
+.experience-title span {
+    color: #46f9ad;
+    font-size: 20px;
+}
+
+.experience-title span:last-of-type {
+    font-size: 16px;
+    color: #ccd6f6;
+}
+
+.experiences {
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.experiences ul {
+    list-style-type: none;
+}
+
+.experiences button {
+    font-family: "Heuristica";
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-left: -40px;
+    color: whitesmoke;
+    padding: 15px 20px;
+    width: 175px;
+    border: none;
+    border-left: 2.5px solid #ccd6f6;
+    background-color: #282c35;
+}
+
+.experiences button:hover {
+    color: #46f9ad;
+    filter: brightness(110%);
+}
+
+.experiences button:focus {
+    border-left-color: #46f9ad;
+    color: #46f9ad;
+}
+
+.experience {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+#experience p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/*********************************** SKILLS ************************************/
+
+#skills {
+    margin-top: 150px;
+    margin-left: 250px;
+    gap: 20px;
+}
+
+.skills-title {
+    margin-top: 25px;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.skills-title h5 {
+    margin-top: 50px;
+}
+
+.skills-title span {
+    color: #46f9ad;
+    font-size: 20px;
+}
+
+.main-skills-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 75px;
+}
+
+.skills-container {
+    margin-top: 50px;
+    position: relative;
+    width: 550px;
+    background: #282c35;
+    filter: brightness(150%);
+    padding: 5px 20px;
+    border-radius: 7px;
+}
+
+.skills-container .skill-box {
+    margin: 25px 0;
+}
+
+.skill-box .skill-name {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #46f9ad;
+    opacity: 0;
+}
+
+.skill-per.html {
+    width: 90%;
+}
+
+.skill-per.css {
+    width: 90%;
+}
+
+.skill-per.js {
+    width: 70%;
+}
+
+.skill-per.cplus {
+    width: 70%;
+}
+
+.skill-per.java {
+    width: 50%;
+}
+
+.skill-per.c {
+    width: 50%;
+}
+
+.skill-per.python {
+    width: 50%;
+}
+
+.animate {
+    animation: progress 0.8s ease-in-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: -14px;
+    top: -30px;
+    font-size: 12px;
+    font-style: italic;
+    color: black;
+    padding: 3px 5px;
+    border-radius: 3px;
+    background: #46f9ad;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #46f9ad;
+    transform: translateX(75%) rotate(45deg);
+}
+
+.other-skills {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.other-skills p {
+    font-size: 18px;
+}
+
+/********************************** CONTACT ***********************************/
+
+#contact {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contact-title {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #46f9ad;
+}
+
+.contact-title span {
+    font-size: 20px;
+}
+
+.contact-contacta {
+    margin-top: 10px;
+    font-size: 70px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#contact button {
+    font-family: "Heuristica";
+    font-size: 16px;
+    padding: 15px 27.5px;
+    border: 1px solid #46f9ad;
+    border-radius: 5px;
+    background: #282c35;
+    color: #46f9ad;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    filter: brightness(120%);
+}
+
+/*********************************** FOOTER ***********************************/
+
+#footer {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    bottom: 0;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
