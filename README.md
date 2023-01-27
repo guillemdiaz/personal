@@ -1,4 +1,4 @@
-# guillemdiaz.github.io
+# My personal website
 
 This website is done entirely with html, css and a little of js. It took me 20 hours (just coding) 
 to build it.<br>
