@@ -11,7 +11,7 @@ else to what is already on the web, apart from the fact that it has personal inf
 repository is public.
 
 ## How to use it
-Just go to https://guillemdiaz.github.io/personal-website-v0/ and and use the header to go to the 
+Just go to https://guillemdiaz.github.io/personal-website/ and and use the header to go to the 
 different sections. The GD icon will take you back to the top.
 
 ## Information architecture
