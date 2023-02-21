@@ -1,3 +1,5 @@
+/*********************** author: Guillem Díaz ****************************/
+
 // Changes the content of the div tag in the experience section
 function changeContent() {
     // button 1
